@@ -5,6 +5,7 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 .calculator {
     width: 320px;
     background: linear-gradient(to bottom, #08034bc5, #294850);

@@ -31,9 +31,13 @@ function backspace() {
 
 function calculate() {
     try {
-        display.textContent = eval(display.textContent);
+        const equation = display.textContent;
+        const result = eval(equation);
+        display.textContent = result;
+        console.log(`Equation: ${equation} = ${result}`);
     } catch {
         display.textContent = "Error";
+        console.log("Invalid equation attempted");
     }
 }
 
