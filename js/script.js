@@ -12,7 +12,7 @@ function appendNumber(number) {
 
 function appendOperator(operator) {
     const lastChar = display.textContent.slice(-1);
-    if ("+-*/".includes(lastChar)) {
+    if ("+-*/**".includes(lastChar)) {
         display.textContent = display.textContent.slice(0, -1) + operator;
     } else {
         display.textContent += operator;
@@ -41,12 +41,16 @@ function calculate() {
     }
 }
 
+// Event listeners for buttons 
+
 document.addEventListener("keydown", function(event) {
     const key = event.key;
     if (!isNaN(key) || key === ".") {
         appendNumber(key);
-    } else if ("+-*/".includes(key)) {
+    } else if ("+-*/**".includes(key)) {
         appendOperator(key);
+    } else if (key === "^") {
+        appendOperator("**");
     } else if (key === "Enter") {
         calculate();
     } else if (key === "Backspace") {

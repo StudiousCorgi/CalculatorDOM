@@ -15,7 +15,7 @@
             <button class="btn btn-secondary" onclick="clearDisplay()">C</button>
             <button class="btn btn-secondary" onclick="appendOperator('/')">/</button>
             <button class="btn btn-secondary" onclick="appendOperator('*')">*</button>
-            <button class="btn btn-danger" onclick="backspace()">⩤</button>
+            <button class="btn btn-secondary" onclick="appendOperator('**')">^</button>
 
             <button class="btn btn-dark" onclick="appendNumber('7')">7</button>
             <button class="btn btn-dark" onclick="appendNumber('8')">8</button>
@@ -30,12 +30,12 @@
             <button class="btn btn-dark" onclick="appendNumber('1')">1</button>
             <button class="btn btn-dark" onclick="appendNumber('2')">2</button>
             <button class="btn btn-dark" onclick="appendNumber('3')">3</button>
-            <button class="btn btn-success" onclick="calculate()">=</button>
+            <div></div>
 
             <button class="btn btn-dark" onclick="appendNumber('0')">0</button>
             <button class="btn btn-dark" onclick="appendNumber('.')">.</button>
-            <div></div>
-            <div></div>
+            <button class="btn btn-danger" onclick="backspace()">⩤</button>
+            <button class="btn btn-success" onclick="calculate()">=</button>
         </div>
     </div>
 

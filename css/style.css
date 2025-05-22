@@ -8,7 +8,7 @@ body {
 
 .calculator {
     width: 320px;
-    background: linear-gradient(to bottom, #08034bc5, #294850);
+    background: linear-gradient(to bottom, #08034bc5, #2a3849);
     border-radius: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -16,15 +16,18 @@ body {
 .calculator-screen {
     height: 60px;
     font-size: 2rem;
-    background-color: #3a4732bd;
+    color: #003b03;
+    background-color: #294d2b;
     border: none;
     padding: 10px;
 }
 
+
 .calculator-buttons .btn {
     height: 60px;
     font-size: 1.5rem;
-    padding: 2px;
+    border: 2px;
+    border-color: #294850;
 }
 
 .text-center {
