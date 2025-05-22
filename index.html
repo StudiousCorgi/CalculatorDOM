@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Calculator (TI-999)</title>
+</head>
+
+<body class="bg-dark text-white d-flex justify-content-center align-items-center vh-100">
+    <div class="calculator border rounded shadow p-3">
+        <div id="display" class="calculator-screen bg-black text-end text-white p-2 mb-3 rounded">0</div>
+        <div class="calculator-buttons row row-cols-4 g-2">
+            <button class="btn btn-secondary" onclick="clearDisplay()">C</button>
+            <button class="btn btn-secondary" onclick="appendOperator('/')">/</button>
+            <button class="btn btn-secondary" onclick="appendOperator('*')">*</button>
+            <button class="btn btn-danger" onclick="backspace()">⩤</button>
+
+            <button class="btn btn-dark" onclick="appendNumber('7')">7</button>
+            <button class="btn btn-dark" onclick="appendNumber('8')">8</button>
+            <button class="btn btn-dark" onclick="appendNumber('9')">9</button>
+            <button class="btn btn-secondary" onclick="appendOperator('-')">-</button>
+
+            <button class="btn btn-dark" onclick="appendNumber('4')">4</button>
+            <button class="btn btn-dark" onclick="appendNumber('5')">5</button>
+            <button class="btn btn-dark" onclick="appendNumber('6')">6</button>
+            <button class="btn btn-secondary" onclick="appendOperator('+')">+</button>
+
+            <button class="btn btn-dark" onclick="appendNumber('1')">1</button>
+            <button class="btn btn-dark" onclick="appendNumber('2')">2</button>
+            <button class="btn btn-dark" onclick="appendNumber('3')">3</button>
+            <button class="btn btn-success" onclick="calculate()">=</button>
+
+            <button class="btn btn-dark" onclick="appendNumber('0')">0</button>
+            <button class="btn btn-dark" onclick="appendNumber('.')">.</button>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="text-center">
+            <h4> Made by StudiousCorgi <a href="#"> Github</a>
+                <p> Inspired by <a href="https://education.ti.com/en/products/calculators/scientific-calculators/ti-30xa" target="_blank">Texas Instruments: TI-30Xa</a> </p>
+            </h4>
+            <p> This is a simple calculator made with HTML, CSS, and JavaScript. </p>
+            </div>
+            </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
